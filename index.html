@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Save Notes</h1>
+
+    </div>
+    <div class="container">
+        <div class="note-container">
+            <h2>New Project</h2>
+            <h5> DD/MM/YYYY</h5>
+            <p>Today I create a new project for my Resume.I hope it will be selected for the best.The name of the project is Notepad.In this site we able to save our notes,important days,events and more we can.</p>
+            <button onclick="deletebook(event)">Delete</button>
+         </div>
+          
+     </div>
+     <div class="popup-overlay"></div>
+     <div class="popup-box">
+        <h2>Add Note</h2>
+        <form>
+            <input type="text" placeholder="Note title" id="note-title-input">
+            <input type="text" placeholder="Date" id="note-date-input">
+             <textarea placeholder="Your Notes" id="note-description=input"></textarea>
+             <button id="add-note">ADD</button>
+             <button id="cancel-popup">CANCEL</button>
+        </form>
+
+     </div>
+
+
+
+     <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
